@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity 9</title>
+        <style>
+            .Form{
+                padding: 20px;
+                width: 500px;
+                height: 660px;
+                border: 2px solid blue;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 200px;
+                border-radius: 8px;
+                background-color: lightcyan;
+            }
+            form{
+                margin-left: 20px;
+                box-sizing: border-box;
+            }
+            h2{
+                text-align: center;
+                font-size: 35px;
+            }
+            .hello{
+                width: 460px;
+                height: 100px
+            }
+            button{
+                width: 463px;
+                height: 40px;
+                color: white;
+                font-size: 15px;
+                border: 2px solid white;
+                border-radius: 5px;
+                background-color: green;
+                margin-bottom: 10px;
+            }
+            .class1,.class2,.class3,.class4{
+                width: 463px;
+                height: 25px
+
+            }
+            select{
+                width: 463px;
+                height: 25px;
+            }
+            label{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Form">
+            <h2>Registration Form</h2>
+            <form>
+            <label for="Name">Name</label><br><br>
+            <input type="text" class="class1"><br><br>
+            <label for="Email">Email</label><br><br>
+            <input type="email" name="email" class="class2"><br><br>
+            <label for="Password">Password</label><br><br>
+            <input type="password" name="password" class="class3"><br><br>
+            <label for="Gender">Gender</label><br><br>
+           <select>
+            <option value="Select">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+            <label for="BIO">Bio</label><br><br>
+            <input type="text" name="Bio" class="hello" class="class4"><br><br>
+            <button>Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
