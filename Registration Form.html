@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registration Form
+        </title>
+        <style>
+            td{
+                text-align: center;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body style="background-color: aqua;">
+        <fieldset>
+            <center> 
+            <legend>
+                Fill Form
+            </legend>
+            </center>
+            <form>
+                <label>Usename:</label><br><br>
+                <input type="text" placeholder="Usename"><br><br>
+                <label>Password:</label><br><br>
+                <input type="text" placeholder="Password"><br><br>
+                <input type="submit"><br><br>
+
+                <label for="2" style="font-size: 20px;">Choose your Favourate Undergraduate :- </label><br><br>
+                <input type="checkbox" id="1" value="B.Tech">
+                <label for="1">B.Tech</label><br>
+                <select>
+                    <option for="Select">Select Branch</option>
+                    <option for="1">Computer Science and Engineering</option>
+                    <option for="2">Electrical Engineering </option>
+                    <option for="3">Civil Engineering</option>
+                    <option for="4">Mechanical Engineering</option>
+                    <option for="5">Chemical Engineering</option>
+                    <option for="6">Robotics</option>
+                    <option for="7">Machine Learning and Artificial Intelligence</option>
+                    <option for="8">Defence Technology</option>
+                </select><br><br>
+                <input type="checkbox" id="2" value="Medical">
+                <label for="2">B.COMB</label><br>
+                <select>
+                    <option for="Select">Select Branch</option>
+                    <option>Income Tax Return</option>
+                    <option>Income Tax Department</option>
+                </select><br><br>
+                <input type="checkbox" id="3" value="BCA">
+                <label for="3">BCA</label><br>
+                <select>
+                    <option for="Select">Select Branch</option>
+                    <option for="1">Computer Application</option>
+                    <option for="2">Robotics</option>
+                    <option for="3">Programming</option>
+                    <option for="4">Codinng</option>
+                    <option for="5">Data Science</option>
+                </select><br><br>
+                <label style="font-size: 20px;">Choose your Carrer :-</label><br><br>
+                <input type="radio" id="1" for="Carrer" value="Govrenment Jobs">
+                <label for="2">Governemnt Jobs</label><br>
+                <select>
+                    <option for="Select">Select Branch</option>
+                    <option for="1">Ministry of Natural Resources</option>
+                    <option for="2">Ministry of Food</option>
+                    <option for="3">Ministry of Human Resources</option>
+                    <option for="4">National Highway Authority of India</option>
+                    <option for="5">Ministry of Roads</option>
+                    <option for="6">Ministry of Trade</option>
+                    <option for="7">Indian Railway</option>
+                    <option for="8">National Airport Authority of India</option>
+                    <option for="9">Professor</option>
+                    <option for="10">Chantant Accountant</option>
+                    <option for="11">Ministry of Education</option>
+                    <option for="12">Income Tax Return</option>
+                    <option for="13">Ministry of Waterways</option>
+                    <option for="14">Ministry of Communication and Telecommunication</option>
+                    <option for="15">Ministry of Coal Department</option>
+                    <option for="16">Minstry of Foreign Affairs</option>
+                    <option for="17">Ministry of Home Affairs</option>
+                    <option for="18">Ministry of Finance</option>
+                    <option for="19">Ministry of Agriculture</option>
+                    <option for="20">Reserve Bank of India</option>
+                </select><br><br><br>
+                <table border="5px">
+                    <tr>
+                        <td>Name</td>
+                        <td>Roll Number</td>
+                        <td>Registration Number</td>
+                        <td>Phone Number</td>
+                        <td>Email id</td>
+                    </tr>
+                    <tr>
+                        <td>Rohit</td>
+                        <td>1</td>
+                        <td>565675</td>
+                        <td>7775675765</td>
+                        <td>rohit78687@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mohit</td>
+                        <td>2</td>
+                        <td>764534</td>
+                        <td>9854675495</td>
+                        <td>mohit6262@gmail.com</td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
